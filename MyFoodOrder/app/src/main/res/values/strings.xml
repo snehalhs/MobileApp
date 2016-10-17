@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyFoodOrder</string>
+    <string name="text">Total: $0.0</string>
+    <string name="button">Back</string>
+    <string name="ordertext">Order Quantity</string>
+    <string name="order1">Your Order Summary</string>
+    <string name="checkout">Check Out</string>
+    <string name="heading">Today Menu</string>
+    <string name="history">History</string>
+    <string name="records">Order Record</string>
+</resources>

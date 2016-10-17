@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cs442.ssonawa1.myfoodorder.MainActivity"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/heading"
+        android:text="@string/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textColor="#0f0f0f" />
+    <Button
+        android:id="@+id/history"
+        android:text="@string/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/heading"
+        android:layout_below="@+id/heading" />
+   <fragment
+       android:id="@+id/fragment1"
+       android:name="com.cs442.ssonawa1.myfoodorder.MenuFragment"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:layout="@layout/fragment_list"
+       android:layout_alignParentBottom="true"
+       android:layout_below="@+id/history" />
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MenuDetailsActivity"
+        android:layout_below="@+id/history">
+
+    </FrameLayout>-->
+
+</RelativeLayout>

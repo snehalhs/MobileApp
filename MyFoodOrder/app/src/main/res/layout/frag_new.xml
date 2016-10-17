@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#020202"
+            android:textSize="23dp" />
+
+    <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="23dp"
+            android:textColor="#0a0a0a"
+            android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0.47" />
+        <TextView
+            android:text="@string/ordertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#060606"
+            android:textSize="23dp"
+            android:layout_toLeftOf="@+id/editquant"
+            android:layout_below="@id/description"/>
+        <EditText
+            android:id="@+id/editquant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/description"
+            android:layout_toEndOf="@+id/backbutton" />
+
+        <Button
+            android:id="@+id/backbutton"
+            android:text="@string/button"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editquant" />
+
+    </RelativeLayout>

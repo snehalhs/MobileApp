@@ -1,0 +1,1 @@
+1. Click on the item in the list. Update the quantity in second screen. The total and quantity will be displayed when clicked on back button.

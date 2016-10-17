@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:text="@string/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textColor="#0f0f0f"
+        android:layout_above="@id/history"/>
+    <Button
+        android:id="@+id/history"
+        android:text="@string/history"
+        android:layout_width="1155dp"
+        android:layout_height="wrap_content"
+       />
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.cs442.ssonawa1.myfoodorder.MenuFragment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="200"
+        android:layout_alignParentLeft="true"
+        tools:layout="@layout/fragment_list"
+        android:layout_below="@+id/history"/>
+
+    <fragment
+        android:id="@+id/fragment_detail"
+        android:name="com.cs442.ssonawa1.myfoodorder.MenuDetailFragment"
+        android:layout_width="552dp"
+        android:layout_toRightOf="@id/fragment1"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/frag_new"
+        android:layout_below="@+id/history" />
+</RelativeLayout>

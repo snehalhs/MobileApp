@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+<TextView
+    android:id="@+id/textorder"
+    android:text="@string/order1"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_height="71dp"
+    android:textSize="23dp"
+    android:textColor="#151313" />
+    <ListView
+        android:id="@+id/orderlist"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollAlwaysVisible="false"
+        android:layout_below="@+id/textorder"
+        android:layout_above="@+id/total1">
+    </ListView>
+    <TextView
+        android:id="@+id/total1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkout"
+        android:textSize="23dp"
+        android:textColor="#0f0e0e" />
+    <Button
+        android:id="@+id/checkout"
+        android:text="@string/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
